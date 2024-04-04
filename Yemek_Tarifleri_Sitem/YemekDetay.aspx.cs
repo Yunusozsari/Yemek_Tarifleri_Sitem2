@@ -27,6 +27,13 @@ namespace Yemek_Tarifleri_Sitem
                 Label3.Text = dr[0].ToString();
             }
             bgl.baglanti().Close();
+
+            // yorum listeleme
+            SqlCommand komut2 = new SqlCommand("select * from Tbl_Yorumlar where yemekid=@p2", bgl.baglanti());
+            komut2.Parameters.AddWithValue("@p2", Convert.ToInt32(yemekid));
+            SqlDataReader dr2 = komut2.ExecuteReader();
+            DataList2.DataSource = dr2;
+            DataList2.DataBind();
         }
     }
 }
