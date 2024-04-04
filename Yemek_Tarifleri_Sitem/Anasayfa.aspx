@@ -9,10 +9,11 @@
         }
         .auto-style8 {
             font-size: x-large;
+            background-color: #FF0066;
         }
         .auto-style9 {
             height: 30px;
-            background-color: #CCCCCC;
+            background-color: #FFFFFF;
         }
     </style>
 </asp:Content>
