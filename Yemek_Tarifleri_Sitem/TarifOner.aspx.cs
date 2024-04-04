@@ -13,5 +13,15 @@ namespace Yemek_Tarifleri_Sitem
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void TextBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
