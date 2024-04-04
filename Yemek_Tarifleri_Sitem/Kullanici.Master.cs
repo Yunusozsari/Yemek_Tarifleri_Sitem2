@@ -10,7 +10,7 @@ namespace Yemek_Tarifleri_Sitem
 {
     public partial class Kullanici : System.Web.UI.MasterPage
     {
-        sqlsınıf bgl = new sqlsınıf();
+        sqlsinif bgl = new sqlsinif();
         protected void Page_Load(object sender, EventArgs e)
         {
             SqlCommand komut = new SqlCommand("Select * from Tbl_Kategoriler", bgl.baglanti());
