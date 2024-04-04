@@ -23,7 +23,11 @@
             <table class="auto-style6">
                 <tr>
                     <td class="auto-style9"><strong>
-                        <asp:Label ID="Label3" runat="server" CssClass="auto-style8" Text='<%# Eval("YemekAd") %>'></asp:Label>
+
+
+                        <a href="YemekDetay.aspx?Yemekid=3"><asp:Label ID="Label3" runat="server" CssClass="auto-style8" Text='<%# Eval("YemekAd") %>'></asp:Label></a>
+
+
                         </strong></td>
                 </tr>
                 <tr>
