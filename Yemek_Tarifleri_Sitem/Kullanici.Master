@@ -20,7 +20,7 @@
         .auto-style2 {
             text-align: center;
             font-weight: bold;
-            background-color: #eea4a4;
+            background-color: #e88b8b;
         }
         .auto-style3 {
             text-align: left;
@@ -40,7 +40,7 @@
         <div style="height: 150px; width: 700px; margin-left: 300px; background-color: #ce7171;">
         </div>
         <div style="margin-left: 300px; width: 700px; height: 20px;"></div>
-        <div style="margin-left: 300px; width: 700px; height: 40px; background-color: #ce7171;">
+        <div style="margin-left: 300px; width: 700px; height: 40px; background-color: #fff;">
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style2"><a href="AnaSayfa.aspx">ANASAYFAA</a></td>
