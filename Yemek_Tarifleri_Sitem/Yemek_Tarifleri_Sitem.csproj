@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin.aspx" />
     <Content Include="Anasayfa.aspx" />
     <Content Include="Banner Foto\slide10.jpg" />
     <Content Include="GununYemegi.aspx" />
@@ -74,13 +75,20 @@
     <Content Include="iletisim.aspx" />
     <Content Include="Kullanici.css" />
     <Content Include="resimler\blog.jpg" />
-    <Content Include="resimler\KategoriDetay.aspx" />
+    <Content Include="KategoriDetay.aspx" />
     <Content Include="resimler\mücver.jpg" />
     <Content Include="TarifOner.aspx" />
     <Content Include="Web.config" />
     <Content Include="YemekDetay.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Anasayfa.aspx.cs">
       <DependentUpon>Anasayfa.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -117,11 +125,18 @@
       <DependentUpon>Kullanici.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="resimler\KategoriDetay.aspx.cs">
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriDetay.aspx.cs">
       <DependentUpon>KategoriDetay.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="resimler\KategoriDetay.aspx.designer.cs">
+    <Compile Include="KategoriDetay.aspx.designer.cs">
       <DependentUpon>KategoriDetay.aspx</DependentUpon>
     </Compile>
     <Compile Include="sqlsinif.cs" />
@@ -143,6 +158,7 @@
   <ItemGroup>
     <Content Include="Kullanici.Master" />
     <None Include="packages.config" />
+    <Content Include="Admin.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
