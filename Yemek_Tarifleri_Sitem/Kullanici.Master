@@ -63,7 +63,7 @@
                 <asp:DataList ID="DataList1" runat="server" Width="217px">
                     <ItemTemplate>
                         <div style="border: thin solid #CCCCCC">
-                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>' style="font-size: medium"></asp:Label>
+                            <a href="KategoriDetay.aspx?Kategoriid=<%# Eval("Kategoriid") %>"><asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>' style="font-size: medium"></asp:Label></a>
                             &nbsp;<span class="auto-style4" kategorİler</span="">(
                             <asp:Label ID="Label2" runat="server" Text='<%# Eval("KategoriAdet") %>' style="font-size: medium"></asp:Label>
                             )</span></div>
