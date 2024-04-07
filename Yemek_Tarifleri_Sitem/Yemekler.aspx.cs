@@ -60,6 +60,7 @@ namespace Yemek_Tarifleri_Sitem
 
         protected void BtnEkle_Click(object sender, EventArgs e)
         {
+            //Yemek Ekleme
             SqlCommand komut = new SqlCommand("InserT Into Tbl_Yemekler (YemekAd,YemekMalzeme,YemekTarif,Kategoriid) values (@p1,@p2,@p3,@p4)", bgl.baglanti());
             komut.Parameters.AddWithValue("@p1", TextBox1.Text);
             komut.Parameters.AddWithValue("@p2", TextBox2.Text);
@@ -67,6 +68,13 @@ namespace Yemek_Tarifleri_Sitem
             komut.Parameters.AddWithValue("@p4", DropDownList1.SelectedValue);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
+
+            //Kategori Sayısını Artırma
+            SqlCommand komut2 = new SqlCommand("Update Tbl_Kategoriler set kategoriadet=kategoriadet+1 where kategoriid=@p1", bgl.baglanti());
+            komut2.Parameters.AddWithValue("@p1", DropDownList1.SelectedValue);
+            komut2.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            
         }
     }
 }
