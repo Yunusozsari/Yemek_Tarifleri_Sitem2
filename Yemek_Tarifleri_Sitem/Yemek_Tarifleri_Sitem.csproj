@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Anasayfa.aspx" />
+    <Content Include="Banner Foto\slide10.jpg" />
     <Content Include="GununYemegi.aspx" />
     <Content Include="Hakkimizda.aspx" />
     <Content Include="iletisim.aspx" />
