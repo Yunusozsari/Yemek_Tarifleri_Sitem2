@@ -75,6 +75,7 @@
     <Content Include="ikonlar\Delete.png" />
     <Content Include="ikonlar\update.png" />
     <Content Include="iletisim.aspx" />
+    <Content Include="KategoriDuzenle.aspx" />
     <Content Include="Kategoriler.aspx" />
     <Content Include="Kullanici.css" />
     <Content Include="resimler\blog.jpg" />
@@ -119,6 +120,13 @@
     </Compile>
     <Compile Include="iletisim.aspx.designer.cs">
       <DependentUpon>iletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriDuzenle.aspx.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KategoriDuzenle.aspx.designer.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Kategoriler.aspx.cs">
       <DependentUpon>Kategoriler.aspx</DependentUpon>
