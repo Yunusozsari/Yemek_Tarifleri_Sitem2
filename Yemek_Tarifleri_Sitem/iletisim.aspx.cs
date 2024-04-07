@@ -18,7 +18,7 @@ namespace Yemek_Tarifleri_Sitem
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("insert into Tbl_Mesajlar1 (MesajGönderen,MesajBaslik,MesajMail,Mesajİcerik) values (@p1,@p2,@p3,@p4)", bgl.baglanti());
+            SqlCommand komut = new SqlCommand("insert into Tbl_Mesajlar (MesajGonderen,MesajBaslik,MesajMail,Mesajicerik) values (@p1,@p2,@p3,@p4)", bgl.baglanti());
             komut.Parameters.AddWithValue("@p1", TextBox1.Text);
             komut.Parameters.AddWithValue("@p2", TextBox2.Text);
             komut.Parameters.AddWithValue("@p3", TextBox3.Text);

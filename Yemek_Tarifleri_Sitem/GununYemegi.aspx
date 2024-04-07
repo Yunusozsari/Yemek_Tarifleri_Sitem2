@@ -1,24 +1,71 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Kullanici.Master" AutoEventWireup="true" CodeBehind="GununYemegi.aspx.cs" Inherits="Yemek_Tarifleri_Sitem.GununYemegi" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style6 {
+            width: 100%;
+        }
+        .auto-style8 {
+            height: 30px;
+            margin-left: 40px;
+        }
+        .auto-style7 {
+            font-size: x-large;
+        }
+        .auto-style9 {
+            font-size: medium;
+            margin-left: 40px;
+        }
+        .auto-style10 {
+            font-size: large;
+            text-align: center;
+            margin-left: 40px;
+        }
+        .auto-style11 {
+            font-size: large;
+            text-align: left;
+            margin-left: 40px;
+        }
+        .auto-style12 {
+            text-align: center;
+            margin-left: 40px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder1">
-    <span class="auto-style4"KATEGORİLER</span>
     <asp:DataList ID="DataList2" runat="server">
         <ItemTemplate>
-            <div class="auto-style3">
-                <asp:Label ID="Label3" runat="server" Text='<%# Eval("GununYemegiAd") %>'></asp:Label>
-                <br />
-                Malzemeler:<asp:Label ID="Label4" runat="server" Text='<%# Eval("GununYemegiMalzeme") %>'></asp:Label>
-                <br />
-                <br />
-                Tarif:<asp:Label ID="Label5" runat="server" Text='<%# Eval("GununYemegiTarif") %>'></asp:Label>
-                <br />
-                <asp:Image ID="Image1" runat="server" Height="238px" Width="407px" ImageUrl="~/resimler/mücver.jpg" />
-                <br />
-                Puan:<asp:Label ID="Label6" runat="server" Text='<%# Eval("GununYemegiPuan") %>'></asp:Label>
-                <br />
-                Tarih:<asp:Label ID="Label7" runat="server" Text='<%# Eval("GununYemegiTarih") %>'></asp:Label>
-            </div>
+            <span class="auto-style4"KATEGORİLER</span>
+            <table class="auto-style6">
+                <tr>
+                    <td class="auto-style12"><strong>
+                        <asp:Label ID="Label8" runat="server" CssClass="auto-style7" Text="Label" Enabled='<%# Eval("GununYemegiAd") %>'></asp:Label>
+                        </strong></td>
+                </tr>
+                <tr>
+                    <td class="auto-style8"><strong>Malzemeler:</strong>
+                        <asp:Label ID="Label9" runat="server" Text='<%# Eval("GununYemegiMalzeme") %>'></asp:Label>
+                    </td>
+                </tr>
+                <span KATEGORİLER</span>
+                <tr>
+                    <td class="auto-style9"><strong>Tarif: </strong>
+                        <asp:Label ID="Label10" runat="server" CssClass="auto-style4" Text='<%# Eval("GununYemegiTarif") %>'></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style10">
+                        <asp:Image ID="Image2" runat="server" Height="193px" Width="401px" ImageUrl="~/resimler/mücver.jpg" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style11"><strong>Puan:</strong><span KATEGORİLER</span><asp:Label ID="Label11" runat="server" Text='<%# Eval("GununYemegiPuan") %>'></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style11"><strong>Tarih:</strong><asp:Label ID="Label12" runat="server" Text='<%# Eval("GununYemegiTarih") %>'></asp:Label>
+                    </td>
+                </tr>
+            </table>
         </ItemTemplate>
     </asp:DataList>
 </asp:Content>
