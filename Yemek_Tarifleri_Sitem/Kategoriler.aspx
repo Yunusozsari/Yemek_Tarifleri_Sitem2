@@ -99,19 +99,19 @@
             <tr>
                 <td>KATEGORİ AD:</td>
                 <td>
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Width="247px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td><strong>KATEGORİ İKON:</strong></td>
                 <td class="auto-style26">
-                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    <asp:FileUpload ID="FileUpload1" runat="server" Width="268px" />
                 </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
                 <td class="auto-style26">
-                    <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="EKLE" Width="107px" />
+                    <asp:Button ID="BtnEkle" runat="server" OnClick="Button5_Click" Text="EKLE" Width="107px" />
                 </td>
             </tr>
         </table>
