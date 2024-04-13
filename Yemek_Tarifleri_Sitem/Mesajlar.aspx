@@ -24,7 +24,7 @@
                     <table class="auto-style2">
                         <tr>
                             <td class="auto-style16" style="width: 248px; height: 34px">
-                                <asp:Label ID="Label1" runat="server" Text='<%# Eval("MesajGonderen") %>'></asp:Label>
+                                <a href="MesajDetay.aspx?Mesajid=<%#Eval("Mesajid") %>" ><asp:Label ID="Label1" runat="server" Text='<%# Eval("MesajGonderen") %>'></asp:Label></a>
                             </td>
                             <td class="auto-style19" style="height: 34px; text-align: right">
                                 <asp:Image ID="Image5" runat="server" Height="30px" ImageUrl="~/ikonlar/book.png" Width="38px" />
