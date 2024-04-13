@@ -11,16 +11,16 @@
             height: 27px;
             width: 110px;
         }
-        .auto-style21 {
-            font-weight: bold;
-        }
-        .auto-style22 {
-            width: 110px;
-            height: 29px;
-        }
-        .auto-style23 {
-            height: 29px;
-        }
+    .auto-style21 {
+        font-weight: bold;
+    }
+    .auto-style22 {
+        width: 110px;
+        height: 29px;
+    }
+    .auto-style23 {
+        height: 29px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

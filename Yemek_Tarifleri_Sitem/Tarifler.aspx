@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Mesajlar.aspx.cs" Inherits="Yemek_Tarifleri_Sitem.Mesajlar" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Tarifler.aspx.cs" Inherits="Yemek_Tarifleri_Sitem.Tarifler" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -13,7 +13,7 @@
                 <td class="auto-style23" style="width: 36px">
                     <asp:Button ID="Button2" runat="server" CssClass="auto-style21" Height="30px" Text="-" Width="30px" OnClick="Button2_Click" />
                 </td>
-                <td>MESAJ LİSTESİ</td>
+                <td>TARİF LİSTESİ</td>
             </tr>
         </table>
         </strong>
@@ -23,11 +23,11 @@
                 <ItemTemplate>
                     <table class="auto-style2">
                         <tr>
-                            <td class="auto-style16" style="width: 248px; height: 34px">
-                                <a href="MesajDetay.aspx?Mesajid=<%#Eval("Mesajid") %>" ><asp:Label ID="Label1" runat="server" Text='<%# Eval("MesajGonderen") %>'></asp:Label></a>
-                            </td>
+                            <td class="auto-style16" style="width: 248px; height: 34px"><a href="MesajDetay.aspx?Mesajid=<%#Eval("Mesajid") %>" >
+                                <asp:Label ID="Label1" runat="server" Text='<%# Eval("TarifAd") %>'></asp:Label>
+                                </a></td>
                             <td class="auto-style19" style="height: 34px; text-align: right">
-                                <asp:Image ID="Image5" runat="server" Height="30px" ImageUrl="~/ikonlar/book.png" Width="38px" />
+                                <asp:Image ID="Image5" runat="server" Height="30px" ImageUrl="~/ikonlar/proposal.png" Width="38px" />
                             </td>
                         </tr>
                     </table>
