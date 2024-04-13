@@ -28,6 +28,7 @@
         .auto-style12 {
             text-align: center;
             margin-left: 40px;
+            height: 39px;
         }
     </style>
 </asp:Content>
@@ -38,7 +39,7 @@
             <table class="auto-style6">
                 <tr>
                     <td class="auto-style12"><strong>
-                        <asp:Label ID="Label8" runat="server" CssClass="auto-style7" Text="Label" Enabled='<%# Eval("GununYemegiAd") %>'></asp:Label>
+                        <asp:Label ID="Label8" runat="server" CssClass="auto-style7" Text='<%# Eval("GununYemegiAd") %>' Enabled='<%# Eval("GununYemegiAd") %>'></asp:Label>
                         </strong></td>
                 </tr>
                 <tr>

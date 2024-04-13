@@ -68,5 +68,10 @@ namespace Yemek_Tarifleri_Sitem
             Panel4.Visible = false;
 
         }
+
+        protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
