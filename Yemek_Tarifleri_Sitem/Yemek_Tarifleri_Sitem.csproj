@@ -71,8 +71,11 @@
     <Content Include="Anasayfa.aspx" />
     <Content Include="Banner Foto\slide10.jpg" />
     <Content Include="GununYemegi.aspx" />
+    <Content Include="GununYemegiAdmin.aspx" />
     <Content Include="Hakkimizda.aspx" />
     <Content Include="ikonlar\book.png" />
+    <Content Include="ikonlar\choose.png" />
+    <Content Include="ikonlar\choose2.png" />
     <Content Include="ikonlar\Delete.png" />
     <Content Include="ikonlar\read.png" />
     <Content Include="ikonlar\update.png" />
@@ -113,6 +116,13 @@
     </Compile>
     <Compile Include="GununYemegi.aspx.designer.cs">
       <DependentUpon>GununYemegi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GununYemegiAdmin.aspx.cs">
+      <DependentUpon>GununYemegiAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GununYemegiAdmin.aspx.designer.cs">
+      <DependentUpon>GununYemegiAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Hakkimizda.aspx.cs">
       <DependentUpon>Hakkimizda.aspx</DependentUpon>

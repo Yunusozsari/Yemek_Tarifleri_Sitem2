@@ -12,28 +12,34 @@
         .auto-style1 {
             width: 99%;
         }
+
         .auto-style2 {
             width: 100%;
         }
+
         .auto-style15 {
             height: 26px;
             text-align: left;
         }
+
         .auto-style5 {
             width: 100%;
         }
+
         .auto-style10 {
             text-decoration: underline;
             text-align: left;
         }
+
         .auto-style16 {
             text-align: left;
         }
+
         .auto-style17 {
             text-align: left;
             font-size: large;
         }
-        </style>
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -42,77 +48,79 @@
             <asp:Image ID="Image3" runat="server" Height="148px" ImageUrl="~/Banner Foto/slide10.jpg" Width="698px" />
 
         </div>
-        <div style="margin-left:300px; width:700px; height: 20px; background-color: #FFFFFF;">
-</div>
-        <div style="margin-left:300px; width:700px; height: 300px; background-color: #FFFFFF;">
-        <div style="width:200px; height: auto; float: left; background-color: #5E9FEE; " class="auto-style16">
-            <table class="auto-style2">
-                <tr>
-                    <td class="auto-style17"><strong>MENÜLER</strong></td>
-                </tr>
-            </table>
-            <table class="auto-style5">
-        <tr>
-            <strong>
-            <td class="auto-style16">&nbsp;</td>
-            </strong>
-        </tr>
-        <tr>
-            <strong>
-            <td class="auto-style15" style="border: thin solid #FFFFFF"><a href="Kategoriler.aspx"> KATEGORİLER</a></td>
-            </strong>
-        </tr>
-        <tr>
-            <strong>
-            <td class="auto-style15" style="border: thin solid #FFFFFF"><a href="Yemekler.aspx">YEMEKLER</a></td>
-            </strong>
-        </tr>
-        <tr>
-            <strong>
-            <td class="auto-style16" style="border: thin solid #FFFFFF"><a href="Yorumlar.aspx">YORUMLAR</a></td>
-            </strong>
-        </tr>
-        <tr>
-            <strong>
-            <td class="auto-style16" style="border: thin solid #FFFFFF"><a href="Mesajlar.aspx">MESAJLAR</a></td>
-            </strong>
-        </tr>
-    </table>
-            <table class="auto-style5">
-        <tr>
-            <strong>
-            <td class="auto-style10" style="border: thin solid #FFFFFF">GÜNÜN YEMEĞİ</td>
-            </strong>
-        </tr>
-        <tr>
-            <strong>
-            <td class="auto-style10" style="border: thin solid #FFFFFF">ÖNERİLER </td>
-            </strong>
-        </tr>
-        <tr>
-            <strong>
-            <td class="auto-style10" style="border: thin solid #FFFFFF">HAKKIMIZDA</td>
-            </strong>
-        </tr>
-        </table>
-            <div class="auto-style16">
-            <strong><br />
+        <div style="margin-left: 300px; width: 700px; height: 20px; background-color: #FFFFFF;">
+        </div>
+        <div style="margin-left: 300px; width: 700px; height: 300px; background-color: #FFFFFF;">
+            <div style="width: 200px; height: auto; float: left; background-color: #5E9FEE;" class="auto-style16">
+                <table class="auto-style2">
+                    <tr>
+                        <td class="auto-style17"><strong>MENÜLER</strong></td>
+                    </tr>
+                </table>
+                <table class="auto-style5">
+                    <tr>
+                        <strong>
+                            <td class="auto-style16">&nbsp;</td>
+                        </strong>
+                    </tr>
+                    <tr>
+                        <strong>
+                            <td class="auto-style15" style="border: thin solid #FFFFFF"><a href="Kategoriler.aspx">KATEGORİLER</a></td>
+                        </strong>
+                    </tr>
+                    <tr>
+                        <strong>
+                            <td class="auto-style15" style="border: thin solid #FFFFFF"><a href="Yemekler.aspx">YEMEKLER</a></td>
+                        </strong>
+                    </tr>
+                    <tr>
+                        <strong>
+                            <td class="auto-style16" style="border: thin solid #FFFFFF"><a href="Yorumlar.aspx">YORUMLAR</a></td>
+                        </strong>
+                    </tr>
+                    <tr>
+                        <strong>
+                            <td class="auto-style16" style="border: thin solid #FFFFFF"><a href="Mesajlar.aspx">MESAJLAR<</td>
+                        </strong>
+                    </tr>
+                </table>
+                <table class="auto-style5">
+                    <tr>
+                        <strong>
+                            <td class="auto-style10" style="border: thin solid #FFFFFF">GÜNÜN YEMEĞİ</td>
+                        </strong>
+                    </tr>
+                    <tr>
+                        <strong>
+                            <td class="auto-style10" style="border: thin solid #FFFFFF">ÖNERİLER </td>
+                        </strong>
+                    </tr>
+                    <tr>
+                        <strong>
+                            <td class="auto-style10" style="border: thin solid #FFFFFF">HAKKIMIZDA</td>
+                        </strong>
+                    </tr>
+                </table>
+                <div class="auto-style16">
+                    <strong>
+                        <br />
+                </div>
             </div>
+            <div style="width: 450px; height: auto; float: left; background-color: #5e9fee; margin-left: 50px;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <table class="auto-style1">
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </asp:ContentPlaceHolder>
             </div>
-        <div style="width:450px; height: auto; float: left; background-color: #5e9fee; margin-left:50px;">
- <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-     <table class="auto-style1">
-         <tr>
-             <td>&nbsp;</td>
-         </tr>
-     </table>
-</asp:ContentPlaceHolder>
-</div>
-</div>
+        </div>
 
 
     </form>
     <p>
-&nbsp;</p>
+        &nbsp;
+    </p>
 </body>
 </html>
