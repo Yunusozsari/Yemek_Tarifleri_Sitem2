@@ -27,7 +27,7 @@
                                 <asp:Label ID="Label1" runat="server" Text='<%# Eval("TarifAd") %>'></asp:Label>
                                 </a></td>
                             <td class="auto-style19" style="height: 34px; text-align: right">
-                                <asp:Image ID="Image5" runat="server" Height="30px" ImageUrl="~/ikonlar/proposal.png" Width="38px" />
+                                 <a href="TarifÖnerDetay.aspx?Tarifid=<%#Eval("Tarifid") %>"><asp:Image ID="Image5" runat="server" Height="30px" ImageUrl="~/ikonlar/proposal.png" Width="38px" /></a>
                             </td>
                         </tr>
                     </table>
