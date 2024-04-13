@@ -5,19 +5,19 @@
             height: 27px;
         }
         .auto-style19 {
-            width: 110px;
+            width: 129px;
         }
         .auto-style20 {
             height: 27px;
-            width: 110px;
+            width: 129px;
         }
     .auto-style21 {
         font-weight: bold;
     }
     .auto-style22 {
-        width: 110px;
-        height: 29px;
-    }
+            width: 129px;
+            height: 29px;
+        }
     .auto-style23 {
         height: 29px;
     }
@@ -55,6 +55,12 @@
             <strong>
                 <asp:DropDownList ID="DropDownList1" runat="server" Width="250px">
                 </asp:DropDownList>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style22">Yemek Görüntü</td>
+            <td class="auto-style23">
+                <asp:FileUpload ID="FileUpload1" runat="server" />
             </td>
         </tr>
         <tr>
