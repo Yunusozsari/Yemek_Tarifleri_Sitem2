@@ -13,7 +13,7 @@
                 <td class="auto-style23" style="width: 36px">
                     <asp:Button ID="Button2" runat="server" CssClass="auto-style21" Height="30px" Text="-" Width="30px" OnClick="Button2_Click" />
                 </td>
-                <td>TARİF LİSTESİ</td>
+                <td>ONAYSIZ TARİF LİSTESİ</td>
             </tr>
         </table>
         </strong>
@@ -33,6 +33,39 @@
                     </table>
                 </ItemTemplate>
             </asp:DataList>
+            <asp:Panel ID="Panel3" runat="server">
+                <strong>
+                <table class="auto-style2">
+                    <tr>
+                        <td class="auto-style22" style="width: 37px">
+                            <asp:Button ID="Button3" runat="server" CssClass="auto-style20" Height="30px" Text="+" Width="30px" OnClick="Button3_Click" />
+                        </td>
+                        <td class="auto-style23" style="width: 36px">
+                            <asp:Button ID="Button4" runat="server" CssClass="auto-style21" Height="30px" Text="-" Width="30px" OnClick="Button4_Click" />
+                        </td>
+                        <td>ONAYLI TARİF LİSTESİ</td>
+                    </tr>
+                </table>
+                </strong>
+                <asp:Panel ID="Panel4" runat="server">
+                    <strong>
+                    <asp:DataList ID="DataList2" runat="server" OnSelectedIndexChanged="DataList1_SelectedIndexChanged" Width="442px">
+                        <ItemTemplate>
+                            <table class="auto-style2">
+                                <tr>
+                                    <td class="auto-style16" style="width: 248px; height: 34px"><a href='MesajDetay.aspx?Mesajid=<%#Eval("Mesajid") %>'>
+                                        <asp:Label ID="Label2" runat="server" Text='<%# Eval("TarifAd") %>'></asp:Label>
+                                        </a></td>
+                                    <td class="auto-style19" style="height: 34px; text-align: right"><a href='TarifÖnerDetay.aspx?Tarifid=<%#Eval("Tarifid") %>'>
+                                        <asp:Image ID="Image6" runat="server" Height="30px" ImageUrl="~/ikonlar/proposal.png" Width="38px" />
+                                        </a></td>
+                                </tr>
+                            </table>
+                        </ItemTemplate>
+                    </asp:DataList>
+                    </strong>
+                </asp:Panel>
+            </asp:Panel>
             </strong>
         </asp:Panel>
     </asp:Panel>

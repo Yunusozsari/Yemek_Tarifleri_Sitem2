@@ -46,9 +46,16 @@
                     </span></strong></td>
             </tr>
             <tr>
+                <td class="auto-style14" style="width: 138px">Kategoriler:</td>
+                <td style="width: 342px">
+                    <asp:DropDownList ID="DropDownList1" runat="server" Width="200px">
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
                 <td class="auto-style14" style="width: 138px">&nbsp;</td>
                 <td style="width: 342px"><strong><span class="auto-style4" kategorİler</span="">
-                    <asp:Button ID="Button1" runat="server" Height="40px" Text="ONAYLA" Width="199px" OnClick="Button1_Click" />
+                    <asp:Button ID="Button1" runat="server" Height="40px" OnClick="Button1_Click" Text="ONAYLA" Width="199px" />
                     </span></strong></td>
             </tr>
         </table>
