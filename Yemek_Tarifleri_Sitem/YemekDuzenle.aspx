@@ -11,6 +11,16 @@
             height: 27px;
             width: 110px;
         }
+        .auto-style21 {
+            font-weight: bold;
+        }
+        .auto-style22 {
+            width: 110px;
+            height: 29px;
+        }
+        .auto-style23 {
+            height: 29px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -40,8 +50,8 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style19">Kategori:</td>
-            <td>
+            <td class="auto-style22">Kategori:</td>
+            <td class="auto-style23">
             <strong>
                 <asp:DropDownList ID="DropDownList1" runat="server" Width="250px">
                 </asp:DropDownList>
@@ -50,7 +60,14 @@
         <tr>
             <td class="auto-style19">&nbsp;</td>
             <td>
-                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="GÜNCELLE" />
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="GÜNCELLE" CssClass="auto-style21" Width="250px" />
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style19">&nbsp;</td>
+            <td>
+                    <strong>
+                        <asp:Button ID="Button2" runat="server" CssClass="auto-style21" OnClick="Button2_Click" Text="Günün Yemeği Seç" Width="250px" />
             </td>
         </tr>
     </table>
